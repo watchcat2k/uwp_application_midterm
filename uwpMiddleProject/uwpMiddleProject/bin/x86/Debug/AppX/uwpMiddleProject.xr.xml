@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="DisplayMode" />
+      <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="CompactPaneLength" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Pane" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Height" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="uwpMiddleProject.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Setters" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Target" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="AutoPlay" />
+      <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="uwpMiddleProject.NewPage10" />
+    <RootType FullName="uwpMiddleProject.NewPage9" />
+    <RootType FullName="uwpMiddleProject.NewPage8" />
+    <RootType FullName="uwpMiddleProject.NewPage7" />
+    <RootType FullName="uwpMiddleProject.NewPage6" />
+    <RootType FullName="uwpMiddleProject.NewPage5" />
+    <RootType FullName="uwpMiddleProject.NewPage4" />
+    <RootType FullName="uwpMiddleProject.NewPage3" />
+    <RootType FullName="uwpMiddleProject.NewPage2" />
+    <RootType FullName="uwpMiddleProject.NewPage1" />
+    <RootType FullName="uwpMiddleProject.dateConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="uwpMiddleProject.RecordPage" />
+    <RootType FullName="uwpMiddleProject.ResultPage" />
+  </Roots.RootTypes>
+</Roots>

@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="uwpMiddleProject.NewPage6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwpMiddleProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="group1">
+                <VisualState x:Name="width1000">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="width800">
+                    <VisualState.Setters>
+                        <Setter Target="image.(UIElement.Visibility)" Value="Collapsed"/>
+                        <Setter Target="stackPanel.(Grid.ColumnSpan)" Value="2"/>
+                        <Setter Target="confirm.(Grid.ColumnSpan)" Value="2"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:Name="stackPanel" Margin="10,100,10,0" Grid.Column="0" VerticalAlignment="Top">
+            <TextBlock x:Name="textProblem" HorizontalAlignment="Left" Grid.Column="0" Margin="0" TextWrapping="Wrap" Text="问题：下列不属于世界七大奇迹的是" VerticalAlignment="Top" FontSize="24"/>
+            <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                <CheckBox x:Name="answerA" Width="58" Margin="30,0,0,0" Click="answerAClick"/>
+                <TextBlock Text="A：秦始皇陵兵马俑" FontSize="24" Margin="-70,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                <CheckBox x:Name="answerB" Width="58" Margin="30,0,0,0" Click="answerBClick"/>
+                <TextBlock Text="B：宙斯神像" FontSize="24" Margin="-70,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                <CheckBox x:Name="answerC" Width="58" Margin="30,0,0,0" Click="answerCClick"/>
+                <TextBlock Text="C：埃及金字塔" FontSize="24" Margin="-70,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                <CheckBox x:Name="answerD" Width="58" Margin="30,0,0,0" Click="answerDClick"/>
+                <TextBlock Text="D：巴比伦空中花园" FontSize="24" Margin="-70,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                <TextBlock Name="trueAnswer" Text="回答正确" FontSize="24" Margin="30,0,0,0" Foreground="Green" Visibility="Collapsed"/>
+                <TextBlock Name="falseAnswer" Text="正确答案是：" FontSize="24" Margin="30,0,0,0" Foreground="Red" Visibility="Collapsed"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Button Name="confirm" Content="确定" Grid.Column="0" HorizontalAlignment="Center" FontSize="24" VerticalAlignment="Bottom" Margin="0,0,350,100" Click="confirmButtonClick"></Button>
+
+        <Image x:Name="image" Grid.Column="1" Source="Assets/6.jpg" HorizontalAlignment="Center" Margin="10,105,10,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

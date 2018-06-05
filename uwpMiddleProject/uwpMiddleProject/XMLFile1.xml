@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tile>
+  <visual>
+
+    <binding template="TileSmall">
+      <text>title</text>
+      <text hint-style="captionSubtle">description</text>
+      <image src="Assets/cup.png" placement="background"/>
+    </binding>
+
+    <binding template="TileMedium" branding="name" displayName="答题模拟器">
+      <text hint-wrap="true" hint-maxLines="2">title</text>
+      <text hint-style="captionSubtle">description</text>
+      <image src="Assets/cup.png" placement="background"/>
+    </binding>
+
+    <binding template="TileWide" branding="nameAndLogo" displayName="答题模拟器">
+      <text>title</text>
+      <text hint-style="captionSubtle">description</text>
+      <image src="Assets/cup.png" placement="background"/>
+    </binding>
+
+  </visual>
+</tile>
